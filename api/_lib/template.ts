@@ -130,7 +130,7 @@ export function getHtml(parsedReq: ParsedRequest) {
         <div class="product__image">
             ${images.map((img, i) =>
                     getImage(img, widths[i], heights[i])
-                ).join('')}
+                ).reverse().join('')}
         </div>
     </body>
 </html>`;

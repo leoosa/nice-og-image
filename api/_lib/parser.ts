@@ -44,11 +44,8 @@ function getArray(stringOrArray: string[] | string): string[] {
     return Array.isArray(stringOrArray) ? stringOrArray : [stringOrArray];
 }
 
-function getDefaultImages(images: string[], theme: Theme): string[] {
+function getDefaultImages(images: string[]): string[] {
     if (images.length > 0 && images[0]) {
         return images;
     }
-    return theme === 'light'
-    ? ['https://assets.zeit.co/image/upload/front/assets/design/zeit-black-triangle.svg']
-    : ['https://assets.zeit.co/image/upload/front/assets/design/zeit-white-triangle.svg'];
 }
