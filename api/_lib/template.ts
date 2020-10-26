@@ -34,7 +34,7 @@ function getCss() {
 }
 .heading {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: calc((100vw - 50rem) / 10 + 1.25rem);
+    font-size: calc((100vw - 60rem) / 10);
     font-weight: 800;
     margin-top: 2rem;
     color: #fff;
@@ -45,11 +45,11 @@ function getCss() {
     font-weight: 700;
     background: #fff;
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 4% 8%;
     display: block;
     width: auto;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: calc((100vw - 90rem) / 10);
     align-self: flex-start;
 }
 .product__image {
@@ -66,8 +66,7 @@ function getCss() {
     display: flex;
     flex-direction: column;
     justify-items: center;
-}
-`;
+}`;
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
