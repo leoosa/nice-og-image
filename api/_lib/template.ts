@@ -129,7 +129,7 @@ export function getHtml(parsedReq: ParsedRequest) {
 
         <div class="product__image">
             ${images.map((img, i) =>
-                    getPlusSign(i) + getImage(img, widths[i], heights[i])
+                    getImage(img, widths[i], heights[i])
                 ).join('')}
         </div>
     </body>
@@ -138,14 +138,9 @@ export function getHtml(parsedReq: ParsedRequest) {
 
 function getImage(src: string, width ='auto', height = '225') {
     return `<img
-        class="logo"
         alt="Generated Image"
         src="${sanitizeHtml(src)}"
         width="${sanitizeHtml(width)}"
         height="${sanitizeHtml(height)}"
     />`
-}
-
-function getPlusSign(i: number) {
-    return i === 0 ? '' : '<div class="plus">+</div>';
 }
